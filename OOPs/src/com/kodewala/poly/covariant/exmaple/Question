@@ -1,0 +1,62 @@
+Problem Statement
+======================
+A hospital wants to implement a Medical Report System in Java that can generate reports for multiple departments.
+All reports share some common behavior, such as generating the report.
+Different departments (like Blood Test and X-Ray) have specialized reports with additional information.
+The system should support runtime polymorphism and type-safe method overriding using covariant return types.
+
+--------------------------------------------------
+Requirements
+
+Parent Report Class (MedicalReport)
+
+Represents a general medical report.
+
+Method: void generate() → prints "Generating medical report".
+
+Child Report Classes (BloodReport and XRayReport)
+
+Extend MedicalReport.
+
+BloodReport: method bloodDetails() → prints "Blood test details".
+
+XRayReport: method xrayDetails() → prints "X-Ray scan details".
+
+Parent Service Class (ReportService)
+
+Method: MedicalReport generateReport() → prints "Generating report using general service" and returns a MedicalReport.
+
+Child Service Classes (BloodReportService and XRayReportService)
+
+Override generateReport() method.
+
+Covariant return type:
+
+BloodReportService returns BloodReport.
+
+XRayReportService returns XRayReport.
+
+Each method prints the corresponding service message.
+
+Driver Class (Driver)
+
+Demonstrate runtime polymorphism:
+
+Parent reference (ReportService) can point to any child service.
+
+Call overridden method and store result in parent type reference.
+
+Downcast to access child-specific methods.
+
+Print outputs for both Blood Report and X-Ray Report.
+
+
+------------------------------------------------
+Demonstrate covariant return types in Java.
+
+Show runtime polymorphism using parent reference and child object.
+
+Understand downcasting to access child-specific methods.
+
+Apply object-oriented principles in a real-world hospital scenario.
+

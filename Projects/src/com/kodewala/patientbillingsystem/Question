@@ -1,0 +1,11 @@
+A hospital wants to develop a simple Patient Billing System 
+to calculate the final bill amount for patients based on their category.
+ Every patient has a base bill amount. 
+ The hospital supports different types of patients such as Normal Patients, 
+ who pay the base bill amount, Insurance Patients, 
+ who receive a 30% discount on the base bill, and VIP Patients,
+  who are charged an additional ₹2000 as a VIP fee. 
+  The system must be designed using inheritance to represent different patient types,
+   method overriding to calculate the final bill for each patient type,
+    and runtime polymorphism by invoking the overridden calculateBill() method using a parent class reference.
+     The patient data should be protected using encapsulation, and the final payable amount must be calculated using a common method named calculateBill().

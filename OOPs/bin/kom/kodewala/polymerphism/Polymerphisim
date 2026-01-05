@@ -1,0 +1,16 @@
+Polymorphisim :- CompileTime | Runtime
+
+Compile-Time => Method OverLoading
+Runtime      => Method Overriding 
+
+overriding ->
+Same method but  differnet implementation
+
+overLoading ->
+same method but different arguments 
+=================================================
+
+
+COMPILETIME POLYMERPHISM
+------------------------
+method overloading
