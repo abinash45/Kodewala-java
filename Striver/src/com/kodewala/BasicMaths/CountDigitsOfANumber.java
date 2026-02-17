@@ -1,10 +1,10 @@
 package com.kodewala.BasicMaths;
 
-public class CountDigitsOfANumber {
+/*public class CountDigitsOfANumber {
 	
 	public int countDigit(int n) {
 		if (n==0) {
-			return 1;
+		//	return 1;
 			
 		}
 	
@@ -15,3 +15,4 @@ public class CountDigitsOfANumber {
 	}
 
 }
+*/

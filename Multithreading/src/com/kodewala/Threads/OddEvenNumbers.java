@@ -9,6 +9,12 @@ public class OddEvenNumbers {
 		Thread t1 = new Thread (new MyThreads ());
 		t1.setName("T1");
 		t1.start();
+		try {
+			t1.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		Thread t2 = new Thread (new MyThreads ());
 		t2.setName("T2");
